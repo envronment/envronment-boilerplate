@@ -1,0 +1,11 @@
+{% set title = "360 Image - Envronment Boilerplate" %}
+
+{% extends "layouts/default.tmpl" %}
+
+{% block assets %}
+<img id="image-360" src="assets/image-360.jpg">
+{% endblock %}
+
+{% block content %}
+<a-sky src="#image-360" rotation="0 -130 0" rotate-image="speed: .3"></a-sky>
+{% endblock %}

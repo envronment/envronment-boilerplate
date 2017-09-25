@@ -1,0 +1,17 @@
+{
+  "extends": "standard",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "__DEV__": true,
+    "__SERVER__": true
+  }
+}

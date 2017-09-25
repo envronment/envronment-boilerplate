@@ -1,0 +1,9 @@
+{% macro render(rotation='', position='1 0 1') %}
+<a-entity
+  camera="userHeight: 1.6; fov: 85"
+  position="{{ position }}"
+  rotation="{{ rotation }}"
+  universal-controls
+  kinematic-body
+></a-entity>
+{% endmacro %}

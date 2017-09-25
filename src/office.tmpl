@@ -1,0 +1,36 @@
+{% import "elements/ground.tmpl" as ground %}
+{% import "elements/player.tmpl" as player %}
+{% import "elements/room.tmpl" as room %}
+
+{% set title = "Office - Envronment Boilerplate" %}
+{% set scene_properties = "physics" %}
+
+{% extends "layouts/default.tmpl" %}
+
+{% block assets %}
+<!-- Ground assets -->
+{{ ground.assets() }}
+
+<!-- Room assets -->
+{{ room.assets() }}
+{% endblock %}
+
+{% block content %}
+<!-- Room -->
+{{ room.render() }}
+
+<!-- Ground -->
+{{ ground.render() }}
+
+<!-- Player -->
+{{ player.render('0 -180 0', '1 0 -1') }}
+
+<!-- Box -->
+<a-box
+  width="2"
+  height="2"
+  material="color: red"
+  position="0 10 5"
+  dynamic-body="mass: 10"
+></a-box>
+{% endblock %}

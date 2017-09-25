@@ -1,0 +1,7 @@
+{% macro assets() %}
+<img id="floor" src="assets/model/Terrazzo_Tile_Light.jpg">
+{% endmacro %}
+
+{% macro render() %}
+<a-grid material="src: #floor" static-body></a-grid>
+{% endmacro %}

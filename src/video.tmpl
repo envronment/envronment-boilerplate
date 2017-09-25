@@ -1,0 +1,19 @@
+{% set title = "360 Video - Envronment Boilerplate" %}
+
+{% extends "layouts/default.tmpl" %}
+
+{% block assets %}
+<video
+  id="video-360"
+  src="assets/video-360.mkv"
+  autoplay
+  loop
+  crossorigin
+  webkit-playsinline
+  playsinline
+></video>
+{% endblock %}
+
+{% block content %}
+<a-videosphere src="#video-360" rotation="0 180 0"></a-videosphere>
+{% endblock %}

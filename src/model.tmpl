@@ -1,0 +1,29 @@
+{% import "elements/ground.tmpl" as ground %}
+{% import "elements/player.tmpl" as player %}
+
+{% set title = "Model - Envronment Boilerplate" %}
+{% set scene_properties = "physics" %}
+
+{% extends "layouts/default.tmpl" %}
+
+{% block assets %}
+<!-- Ground assets -->
+{{ ground.assets() }}
+
+<img id="wallpaper" src="assets/model/Quartz_Light_Grey.jpg">
+<a-asset-item id="create-obj" src="assets/model.obj"></a-asset-item>
+<a-asset-item id="create-mtl" src="assets/model.mtl"></a-asset-item>
+{% endblock %}
+
+{% block content %}
+
+<!-- Model -->
+<a-obj-model src="#create-obj" mtl="#create-mtl"></a-obj-model>
+
+<!-- Ground -->
+{{ ground.render() }}
+
+<!-- Player -->
+{{ player.render() }}
+
+{% endblock %}
