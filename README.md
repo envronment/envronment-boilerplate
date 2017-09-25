@@ -1,6 +1,6 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
---
+<image src="https://user-images.githubusercontent.com/5190217/30834260-b90148f8-a228-11e7-8682-d09df8721da4.png" width="300">
 
 # Envronment Boilerplate
 
