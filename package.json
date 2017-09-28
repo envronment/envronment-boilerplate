@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "start": "node ./config/scripts/start.js",
-    "build": "node ./config/scripts/build.js"
+    "build": "node ./config/scripts/build.js",
+    "myip": "node ./config/scripts/myip.js"
   },
   "dependencies": {
     "aframe": "^0.7.0",
